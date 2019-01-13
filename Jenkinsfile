@@ -16,7 +16,7 @@ stage('Docker Build') {
          stage('Docker Push') {
                agent any
              steps {
-                     withCredentials([usernamePassword(credentialsId: 'DOCKER_HUB_GLOBAL', passwordVariable: 'dockerHubPassword',
+                     withCredentials([usernamePassword(credentialsId: 'docker-UbuntuLocal-Cred', passwordVariable: 'dockerHubPassword',
 					 usernameVariable: 'dockerHubUser')]) {
                      sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
                      sh 'docker push sanjeev435/jenkins-elb-aws'}
