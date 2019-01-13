@@ -13,6 +13,6 @@ ENV JAVA_OPTS -Dorg.eclipse.jetty.server.Request.maxFormContentSize=100000000 \
 
 # copy scripts and ressource files
 COPY *.* $JENKINS_REF/
-COPY jenkins-home/jobs $JENKINS_REF/jobs/
-COPY jenkins-home/init.groovy.d $JENKINS_REF/init.groovy.d/
-COPY jenkins-home/dsl $JENKINS_REF/dsl/
+COPY jobs $JENKINS_REF/jobs/
+COPY init.groovy.d $JENKINS_REF/init.groovy.d/
+COPY dsl $JENKINS_REF/dsl/
