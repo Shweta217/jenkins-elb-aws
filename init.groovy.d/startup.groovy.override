@@ -23,7 +23,7 @@ configureCloud()
 
 Jenkins.instance.save()
 
-buildJob('seed', new ParametersAction(new StringParameterValue('NumberOfCopies', "5")))
+//buildJob('seed', new ParametersAction(new StringParameterValue('NumberOfCopies', "5")))
 
 Logger.global.info("[Done] startup script")
 
@@ -41,7 +41,7 @@ private void configureSecurity() {
     Jenkins.instance.setSlaveAgentPort(50000)
 }
 
-private def buildJob(String jobName, def params = null) {
+/* private def buildJob(String jobName, def params = null) {
     Logger.global.info("Building job '$jobName")
     def job = Jenkins.instance.getJob(jobName)
     Jenkins.instance.queue.schedule(job, 0, new CauseAction(new Cause() {
@@ -51,6 +51,7 @@ private def buildJob(String jobName, def params = null) {
         }
     }), params)
 }
+*/
 
 private getClientConfiguration() {
     new ClientConfiguration()
