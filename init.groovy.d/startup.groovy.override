@@ -7,7 +7,7 @@ import com.amazonaws.services.elasticloadbalancing.model.*
 import com.cloudbees.jenkins.plugins.amazonecs.ECSCloud
 import com.cloudbees.jenkins.plugins.amazonecs.ECSTaskTemplate
 import hudson.model.*
-import hudson.plugins.gradle.*
+//import hudson.plugins.gradle.*
 import hudson.tools.*
 import jenkins.model.*
 import jenkins.model.Jenkins
