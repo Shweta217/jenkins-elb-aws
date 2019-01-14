@@ -9,7 +9,7 @@ RUN /usr/local/bin/plugins.sh $JENKINS_REF/plugins.txt
 ENV JAVA_OPTS -Dorg.eclipse.jetty.server.Request.maxFormContentSize=100000000 \
  			  -Dorg.apache.commons.jelly.tags.fmt.timeZone=America/Los_Angeles \
  			  -Dhudson.diyChunking=false \
- 			  -Djenkins.install.runSetupWizard=true
+ 			  -Djenkins.install.runSetupWizard=false
 
 # copy scripts and ressource files
 COPY *.* $JENKINS_REF/
