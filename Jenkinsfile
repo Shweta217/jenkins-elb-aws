@@ -9,7 +9,7 @@ stage('Docker Build') {
 
                 agent any
              steps {
-        sh 'docker build -t sanjeev435/jenkins-elb-aws:latest .'
+        sh 'docker build -t sanjeev435/jenkins-elb-aws-alpine:latest .'
 }
            }
 			
