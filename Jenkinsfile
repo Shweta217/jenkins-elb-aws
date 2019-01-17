@@ -19,7 +19,7 @@ stage('Docker Build') {
                      withCredentials([usernamePassword(credentialsId: 'docker-UbuntuLocal-Cred', passwordVariable: 'dockerHubPassword',
 					 usernameVariable: 'dockerHubUser')]) {
                      sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-                     sh 'docker push sanjeev435/jenkins-elb-aws'}
+                     sh 'docker push sanjeev435/jenkins-elb-aws-alpine'}
 			    }
 			}
 }
