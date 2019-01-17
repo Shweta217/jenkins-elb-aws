@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:latest
+FROM jenkins/jenkins:2.71-alpine
 
 ENV JENKINS_REF /usr/share/jenkins/ref
 
